@@ -54,4 +54,9 @@ fun main() {
 //    println(total)
 //    println(number)
 //    println(number2)
+
+    var a = 3
+    var b = 5
+
+    var total = a++ - --b - a++ + ++a - b-- - a++
 }
