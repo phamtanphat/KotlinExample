@@ -41,8 +41,17 @@ fun main() {
     // Có 2 biểu thức
     // 1 -> Gán giá trị trước
     // 2 -> Tăng giá trị lên 1
-    var number = 5
-    var number2 = 10
-
-    var total = number++ - --number2 + --number + number2++
+//    var number = 5
+//    var number2 = 10
+//
+//    var total = number++ - --number2 + --number + number2++
+    // Độ ưu tiên ++, -- lớn nhất
+    // 5 - --number2 + --number + number2++, number = 6, number2 = 10
+    // 5 - 9 + --number + number2++, number = 6, number2 = 9
+    // 5 - 9 + 5 + number2++, number = 5, number2 = 9
+    // 5 - 9 + 5 + 9, number = 5, number2 = 10
+    // total = 10, number = 5, number2 = 10
+//    println(total)
+//    println(number)
+//    println(number2)
 }
